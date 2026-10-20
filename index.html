@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bevis Impact Foundation — Youth HIV testing and sex education in Zambia</title>
+  <meta name="description" content="Bevis Impact Foundation promotes youth HIV testing, honest sexual health education and better HIV services for young people in Zambia, in honour of Bevis Phiri.">
+  <meta name="theme-color" content="#2bb24c">
+  <!-- Test preview only: keeps search engines away. Remove this line before the real launch. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Bevis Impact Foundation">
+  <meta property="og:description" content="HIV testing support and honest sex education for young people across Zambia. Youth. Health. Zero HIV.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/university-students-on-the-move.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=panchang@700&f[]=switzer@400,500&display=swap">
+
+  <script>
+    document.documentElement.classList.replace('no-js', 'js');
+    // failsafe: if the page script did not finish, show everything as a plain page
+    addEventListener('load', function () { if (!window.__bif) document.documentElement.classList.replace('js', 'no-js'); });
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/firebase-config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Bar that drops in once the first screen has scrolled away -->
+  <header class="bar" data-bar>
+    <a class="bar__mark" href="#top" aria-label="Bevis Impact Foundation, back to top">Bevis</a>
+    <nav class="bar__nav" aria-label="Main">
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#programmes">Programmes</a>
+      <a class="link" href="#myth-or-fact">Myth or fact</a>
+      <a class="link" href="#get-involved">Get involved</a>
+    </nav>
+    <a class="button button--accent bar__cta" href="#get-tested">Get tested</a>
+    <button class="bar__menu link" type="button" data-menu-open aria-haspopup="dialog">Menu</button>
+  </header>
+
+  <dialog class="menu" id="menu" aria-label="Menu">
+    <div class="menu__top">
+      <span class="menu__mark">Bevis</span>
+      <button class="menu__close link" type="button" data-menu-close>Close</button>
+    </div>
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="#about" data-menu-link>About</a>
+      <a href="#programmes" data-menu-link>Programmes</a>
+      <a href="#get-tested" data-menu-link>Get tested</a>
+      <a href="#myth-or-fact" data-menu-link>Myth or fact</a>
+      <a href="#get-involved" data-menu-link>Get involved</a>
+      <a href="#contact" data-menu-link>Contact</a>
+    </nav>
+    <p class="menu__foot">Youth. Health. Zero HIV.</p>
+  </dialog>
+
+  <main id="main">
+
+    <!-- 1. Hero: the name across the middle -->
+    <section class="hero" id="top">
+      <div class="hero__intro">
+        <p class="hero__lead" data-load style="--d:420ms">HIV testing support and honest sex education for young people across Zambia.</p>
+        <a class="button button--ink hero__action" href="#get-tested" data-load style="--d:500ms">Find testing support</a>
+      </div>
+
+      <nav class="hero__nav" aria-label="Sections">
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#programmes">Programmes</a>
+        <a class="link" href="#myth-or-fact">Myth or fact</a>
+        <a class="link" href="#get-involved">Get involved</a>
+      </nav>
+      <button class="hero__menu link" type="button" data-menu-open aria-haspopup="dialog">Menu</button>
+
+      <h1 class="hero__title">
+        <span class="hero__name-wrap" data-wordmark><span class="hero__name" data-line>Bevis</span></span>
+        <span class="hero__rest" data-load style="--d:360ms">Impact Foundation</span>
+      </h1>
+
+      <p class="hero__slogan">Youth. Health. Zero HIV.</p>
+      <p class="hero__links">
+        <a class="link" href="#about">In honour of Bevis Phiri</a>
+        <a class="link" href="#numbers">Zambia’s 95-95-95</a>
+      </p>
+
+      <figure class="hero__picture" data-load style="--d:620ms">
+        <img src="assets/img/university-students-on-the-move.jpg" width="1600" height="1204"
+             alt="Students walking down a tree-lined path at the University of Zambia, seen from behind and at a distance"
+             fetchpriority="high">
+      </figure>
+    </section>
+
+    <!-- 2. The numbers: stepped figure tiles -->
+    <section class="numbers" id="numbers" aria-labelledby="numbers-title">
+      <span class="alias" id="impact" aria-hidden="true"></span>
+      <div class="numbers__grid">
+        <div class="tile tile--a" data-reveal>
+          <p class="tile__figure"><span data-roll>89%</span></p>
+          <p class="tile__caption">of adults living with HIV in Zambia know their status. The goal is 95. Closing that gap, starting with young people, is our work.</p>
+        </div>
+
+        <div class="numbers__side">
+          <div class="numbers__head">
+            <h2 class="numbers__title" id="numbers-title" data-reveal>Zambia’s 95-95-95</h2>
+            <p data-reveal style="--i:1">The UNAIDS goal: 95% of people with HIV know their status, 95% of them are on treatment, and 95% of those have the virus under control.</p>
+          </div>
+          <div class="numbers__pair">
+            <div class="tile tile--b" data-reveal style="--i:2">
+              <p class="tile__figure"><span data-roll>98%</span></p>
+              <p class="tile__caption">of those who know are on treatment.</p>
+            </div>
+            <div class="tile tile--c" data-reveal style="--i:3">
+              <p class="tile__figure"><span data-roll>96%</span></p>
+              <p class="tile__caption">of those on treatment have the virus suppressed.</p>
+            </div>
+          </div>
+          <div class="numbers__note" data-reveal style="--i:4">
+            <p>Young people are furthest behind. Among 15 to 24-year-olds living with HIV, about 7 in 10 have the virus suppressed, against 86% of all adults.</p>
+            <p class="small">Source: <a class="link link--line" href="https://stacks.cdc.gov/view/cdc/133880">ZAMPHIA 2021 summary sheet</a>, adults 15+, Zambia Ministry of Health with CDC and ICAP, December 2022. Figures rounded from 88.7%, 98.0% and 96.3%.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A photograph bleeding off both edges, caption on a solid bar -->
+    <figure class="band">
+      <div class="band__media">
+        <img src="assets/img/lusaka-aero-view-01.jpg" width="1600" height="900" loading="lazy" decoding="async"
+             alt="Lusaka seen from the air: low-rise neighbourhoods, trees and a long main road running to the horizon">
+      </div>
+      <figcaption class="band__caption" data-reveal>
+        <p class="band__statement">Every young person in Zambia deserves to know their status.</p>
+        <p class="small">Lusaka, from the air.</p>
+      </figcaption>
+    </figure>
+
+    <!-- 3. About: two columns, highlighted words -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 class="about__title" id="about-title" data-reveal>In honour of Bevis Phiri</h2>
+      <div class="about__text">
+        <p data-reveal style="--i:1"><strong>Bevis Impact Foundation</strong> is a youth-focused foundation in <mark class="hl hl--white">Zambia</mark>. We promote <mark class="hl hl--green">HIV testing</mark>, sexual health awareness, safer sex and stigma reduction, and we push for HIV prevention and care that young people actually want to use.</p>
+        <p data-reveal style="--i:2">Our name honours <mark class="hl hl--ink">Bevis Phiri</mark>. His work in HIV research and service delivery inspires ours: services that are effective, youth-friendly and good for <mark class="hl hl--white">the people who use them and the staff who run them</mark>.</p>
+        <p data-reveal style="--i:3">We picture a Zambia where <mark class="hl hl--green">every young person knows their status</mark> and no one is left behind in prevention or care. Our work is youth-centred, compassionate, evidence-led and measured by impact: shaped by community needs, informed by research and delivered <mark class="hl hl--white">without judgment</mark>.</p>
+        <p class="about__close" data-reveal style="--i:4"><a class="hl hl--ink about__link" href="#get-involved">Want to build it with us?</a></p>
+      </div>
+    </section>
+
+    <!-- 4. Programmes at poster scale -->
+    <section class="programmes" id="programmes" aria-labelledby="programmes-title">
+      <span class="alias" id="programs" aria-hidden="true"></span>
+      <h2 class="programmes__title" id="programmes-title" data-reveal>What we do</h2>
+      <ul class="programmes__list" role="list">
+        <li class="prog" data-reveal style="--i:1">
+          <h3 class="prog__name">Know your status</h3>
+          <p class="prog__text">Youth-friendly HIV testing campaigns, pop-up community events and school outreach, with self-testing access on the way. The aim is simple: make knowing your status normal.</p>
+        </li>
+        <li class="prog" data-reveal style="--i:2">
+          <h3 class="prog__name">Sexual health education</h3>
+          <p class="prog__text">Clear, relatable sessions on safer sex, condoms, consent, stigma, HIV prevention and sexual wellbeing, for young people across Zambia.</p>
+        </li>
+        <li class="prog" data-reveal style="--i:3">
+          <h3 class="prog__name">Bevis Impact Lab</h3>
+          <p class="prog__text">Research-informed service delivery reviews, youth feedback and community insight, so HIV services work better for the people who use them and the staff who run them.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 5. Get tested: accordion of tinted panels, then the request form -->
+    <section class="tested" id="get-tested" aria-labelledby="tested-title">
+      <div class="tested__intro">
+        <h2 class="tested__title" id="tested-title" data-reveal>Get tested</h2>
+        <p data-reveal style="--i:1">Knowing your status is an act of strength. Here is what happens, from your first message to your result, so nothing about it comes as a surprise.</p>
+      </div>
+
+      <ol class="steps" data-steps role="list">
+        <li class="step is-open" style="--tone:#0e3d1c; --tone-ink:#ffffff">
+          <button class="step__tab" type="button" aria-expanded="true" aria-controls="step-ask" id="tab-ask"><span>Ask us</span></button>
+          <div class="step__body" id="step-ask" role="region" aria-labelledby="tab-ask">
+            <div class="step__words">
+              <h3 class="step__name">Ask us</h3>
+              <p>Send a request with the form below: your province and what you need. We get back to you and help you plan the next step.</p>
+            </div>
+            <figure class="step__picture">
+              <img src="assets/img/university-students-on-the-move.jpg" width="1600" height="1204" loading="lazy" decoding="async"
+                   alt="Students walking along a path at the University of Zambia, seen from behind">
+            </figure>
+          </div>
+        </li>
+        <li class="step" style="--tone:#17602c; --tone-ink:#ffffff">
+          <button class="step__tab" type="button" aria-expanded="false" aria-controls="step-place" id="tab-place"><span>Find a place</span></button>
+          <div class="step__body" id="step-place" role="region" aria-labelledby="tab-place">
+            <div class="step__words">
+              <h3 class="step__name">Find a place</h3>
+              <p>We link you to a youth-friendly clinic or a community outreach event near you. Self-testing access is on the way.</p>
+            </div>
+            <figure class="step__picture">
+              <img src="assets/img/lusaka-aero-view-17.jpg" width="1600" height="900" loading="lazy" decoding="async"
+                   alt="Dense neighbourhoods of Lusaka seen from the air, roofs packed close together">
+            </figure>
+          </div>
+        </li>
+        <li class="step" style="--tone:#23a046; --tone-ink:#0d0d0d">
+          <button class="step__tab" type="button" aria-expanded="false" aria-controls="step-talk" id="tab-talk"><span>Talk it through</span></button>
+          <div class="step__body" id="step-talk" role="region" aria-labelledby="tab-talk">
+            <div class="step__words">
+              <h3 class="step__name">Talk it through</h3>
+              <p>A trained counsellor explains the test in private and answers your questions. Nothing happens until you are ready.</p>
+            </div>
+            <figure class="step__picture">
+              <img src="assets/img/hiv-rapid-test-on-table.jpg" width="1600" height="1200" loading="lazy" decoding="async"
+                   alt="An HIV rapid test kit laid out on a paper sheet, with gloved hands preparing it">
+            </figure>
+          </div>
+        </li>
+        <li class="step" style="--tone:#5cc873; --tone-ink:#0d0d0d">
+          <button class="step__tab" type="button" aria-expanded="false" aria-controls="step-test" id="tab-test"><span>The test</span></button>
+          <div class="step__body" id="step-test" role="region" aria-labelledby="tab-test">
+            <div class="step__words">
+              <h3 class="step__name">The test</h3>
+              <p>A small finger-prick of blood, or a mouth swab with a self-test. The result is ready in about 20 minutes.</p>
+            </div>
+            <figure class="step__picture">
+              <img src="assets/img/hiv-test-kit.jpg" width="1280" height="960" loading="lazy" decoding="async"
+                   alt="A rapid HIV test card on a wooden table, with a drop of blood in the sample well">
+            </figure>
+          </div>
+        </li>
+        <li class="step" style="--tone:#a6e3b3; --tone-ink:#0d0d0d">
+          <button class="step__tab" type="button" aria-expanded="false" aria-controls="step-next" id="tab-next"><span>Next steps</span></button>
+          <div class="step__body" id="step-next" role="region" aria-labelledby="tab-next">
+            <div class="step__words">
+              <h3 class="step__name">Next steps</h3>
+              <p>Negative: we help you stay that way, with condoms, PrEP and regular tests. Positive: you get a confirmatory test and can start treatment straight away. Treatment keeps you healthy and stops HIV passing on.</p>
+            </div>
+            <figure class="step__picture">
+              <img src="assets/img/zambia-farm-produce-going-to-the-market.jpg" width="1600" height="1092" loading="lazy" decoding="async"
+                   alt="Two men cycling along a rural road in Zambia, bicycles loaded with produce for market">
+            </figure>
+          </div>
+        </li>
+      </ol>
+
+      <div class="request" id="request">
+        <div class="request__intro">
+          <h3 class="request__title" data-reveal>Ask for testing support</h3>
+          <p data-reveal style="--i:1">Tell us where you are and what you need. A first name is enough. We use these details only to get back to you about this request.</p>
+          <p class="small" data-reveal style="--i:2">Prefer email? Write to <a class="link link--line" href="mailto:hello@bevisimpactfoundation.org?subject=Testing%20support">hello@bevisimpactfoundation.org</a>.</p>
+          <figure class="request__picture" data-reveal style="--i:3">
+            <img src="assets/img/hiv-test-kit.jpg" width="1280" height="960" loading="lazy" decoding="async"
+                 alt="A rapid HIV test card on a wooden table, the result window still blank">
+            <figcaption class="small">A rapid HIV test card. The result takes about 20 minutes.</figcaption>
+          </figure>
+        </div>
+
+        <form class="form" data-request novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span class="field__label">First name or nickname</span>
+              <input class="field__input" name="name" type="text" autocomplete="given-name" required>
+            </label>
+            <label class="field field--short">
+              <span class="field__label">Age</span>
+              <input class="field__input" name="age" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="2" required>
+            </label>
+          </div>
+
+          <fieldset class="chips">
+            <legend class="field__label">Your province</legend>
+            <div class="chips__set">
+              <label class="chip"><input type="radio" name="province" value="Lusaka" required><span>Lusaka</span></label>
+              <label class="chip"><input type="radio" name="province" value="Copperbelt"><span>Copperbelt</span></label>
+              <label class="chip"><input type="radio" name="province" value="Central"><span>Central</span></label>
+              <label class="chip"><input type="radio" name="province" value="Southern"><span>Southern</span></label>
+              <label class="chip"><input type="radio" name="province" value="Eastern"><span>Eastern</span></label>
+              <label class="chip"><input type="radio" name="province" value="Western"><span>Western</span></label>
+              <label class="chip"><input type="radio" name="province" value="Muchinga"><span>Muchinga</span></label>
+              <label class="chip"><input type="radio" name="province" value="Northern"><span>Northern</span></label>
+              <label class="chip"><input type="radio" name="province" value="North-Western"><span>North-Western</span></label>
+              <label class="chip"><input type="radio" name="province" value="Luapula"><span>Luapula</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="chips">
+            <legend class="field__label">What do you need help with?</legend>
+            <div class="chips__set">
+              <label class="chip"><input type="radio" name="need" value="HIV testing" required><span>HIV testing</span></label>
+              <label class="chip"><input type="radio" name="need" value="Safer sex information"><span>Safer sex information</span></label>
+              <label class="chip"><input type="radio" name="need" value="Clinic referral"><span>Clinic referral</span></label>
+              <label class="chip"><input type="radio" name="need" value="Community outreach event"><span>Community outreach event</span></label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            <span class="field__label">Anything else we should know? <span class="field__optional">(optional)</span></span>
+            <textarea class="field__input field__input--area" name="message" rows="3"></textarea>
+          </label>
+
+          <div class="form__foot">
+            <button class="button button--accent" type="submit" data-submit>Send request</button>
+            <p class="form__status" data-status role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 6. Myth or fact: the live thing, one statement per poster line -->
+    <section class="myths" id="myth-or-fact" aria-labelledby="myths-title">
+      <span class="alias" id="resources" aria-hidden="true"></span>
+      <div class="myths__head">
+        <div class="myths__intro">
+          <h2 class="myths__title" id="myths-title" data-reveal>Myth or fact?</h2>
+          <p data-reveal style="--i:1">Six things people say about HIV. Make your call on each one, then read the answer.</p>
+          <p class="myths__score js-only" data-score aria-live="polite" data-reveal style="--i:2">Your score: 0 of 6</p>
+        </div>
+        <figure class="myths__picture" data-reveal style="--i:2">
+          <img src="assets/img/hiv-rapid-test-kit-orasure.jpg" width="1600" height="1067" loading="lazy" decoding="async"
+               alt="Close-up of an oral HIV rapid test: the swab and its specimen vial">
+        </figure>
+      </div>
+
+      <ul class="myths__list" role="list" data-quiz>
+        <li class="myth" data-truth="myth">
+          <p class="myth__statement">You can tell by looking</p>
+          <div class="myth__call js-only" role="group" aria-label="You can tell by looking: myth or fact?">
+            <button class="myth__btn" type="button" data-call="myth">Myth</button>
+            <button class="myth__btn" type="button" data-call="fact">Fact</button>
+          </div>
+          <div class="myth__answer" data-answer>
+            <p><strong class="myth__verdict">Myth.</strong> Most people with HIV look and feel well for years. A test is the only way to know.</p>
+          </div>
+        </li>
+        <li class="myth" data-truth="myth">
+          <p class="myth__statement">Kissing spreads HIV</p>
+          <div class="myth__call js-only" role="group" aria-label="Kissing spreads HIV: myth or fact?">
+            <button class="myth__btn" type="button" data-call="myth">Myth</button>
+            <button class="myth__btn" type="button" data-call="fact">Fact</button>
+          </div>
+          <div class="myth__answer" data-answer>
+            <p><strong class="myth__verdict">Myth.</strong> HIV is not passed on through saliva, hugs, sharing cups or toilet seats. It spreads through sex without a condom, shared needles, and from mother to baby without treatment.</p>
+          </div>
+        </li>
+        <li class="myth" data-truth="fact">
+          <p class="myth__statement">Condoms stop HIV</p>
+          <div class="myth__call js-only" role="group" aria-label="Condoms stop HIV: myth or fact?">
+            <button class="myth__btn" type="button" data-call="myth">Myth</button>
+            <button class="myth__btn" type="button" data-call="fact">Fact</button>
+          </div>
+          <div class="myth__answer" data-answer>
+            <p><strong class="myth__verdict">Fact.</strong> Used correctly every time, condoms are highly effective against HIV and other sexually transmitted infections.</p>
+          </div>
+        </li>
+        <li class="myth" data-truth="myth">
+          <p class="myth__statement">One test is enough</p>
+          <div class="myth__call js-only" role="group" aria-label="One test is enough: myth or fact?">
+            <button class="myth__btn" type="button" data-call="myth">Myth</button>
+            <button class="myth__btn" type="button" data-call="fact">Fact</button>
+          </div>
+          <div class="myth__answer" data-answer>
+            <p><strong class="myth__verdict">Myth.</strong> A test shows your status at that moment. Test again after any risk, and at least once a year if you are sexually active.</p>
+          </div>
+        </li>
+        <li class="myth" data-truth="fact">
+          <p class="myth__statement">Meds stop the spread</p>
+          <div class="myth__call js-only" role="group" aria-label="Meds stop the spread: myth or fact?">
+            <button class="myth__btn" type="button" data-call="myth">Myth</button>
+            <button class="myth__btn" type="button" data-call="fact">Fact</button>
+          </div>
+          <div class="myth__answer" data-answer>
+            <p><strong class="myth__verdict">Fact.</strong> When HIV treatment keeps the virus undetectable, HIV is not passed on through sex. Undetectable means untransmittable.</p>
+          </div>
+        </li>
+        <li class="myth" data-truth="myth">
+          <p class="myth__statement">HIV is the end</p>
+          <div class="myth__call js-only" role="group" aria-label="HIV is the end: myth or fact?">
+            <button class="myth__btn" type="button" data-call="myth">Myth</button>
+            <button class="myth__btn" type="button" data-call="fact">Fact</button>
+          </div>
+          <div class="myth__answer" data-answer>
+            <p><strong class="myth__verdict">Myth.</strong> With daily treatment, people living with HIV live long, healthy lives, work, have relationships and have children.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="myths__done js-only" data-done hidden>
+        <p class="myths__result" data-result></p>
+        <div class="myths__actions">
+          <a class="button button--ink" href="#get-tested">Find testing support</a>
+          <button class="button button--plain" type="button" data-reset>Play again</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Voices: a quotation spread edge to edge -->
+    <section class="voices" id="voices" aria-labelledby="voices-title">
+      <span class="alias" id="testimonials" aria-hidden="true"></span>
+      <h2 class="voices__title" id="voices-title" data-reveal>In their words</h2>
+      <figure class="spread" data-reveal style="--i:1">
+        <blockquote class="spread__quote">
+          <p>
+            <span class="spread__line"><span class="pair"><span>“Helped</span> <span>me</span></span> <span class="pair"><span>get</span> <span>tested</span></span></span>
+            <span class="spread__line"><span class="pair"><span>for</span> <span>the</span></span> <span class="pair"><span>first</span> <span>time.”</span></span></span>
+          </p>
+        </blockquote>
+        <figcaption class="spread__by"><span>Sarah M.</span><span>22 years old</span><span>Lusaka</span></figcaption>
+      </figure>
+
+      <div class="voices__more">
+        <figure class="voice" data-reveal style="--i:2">
+          <blockquote><p>“The education sessions really opened my eyes to safer sex practices. I feel more confident now in making healthy choices.”</p></blockquote>
+          <figcaption>John K., 19, Copperbelt</figcaption>
+        </figure>
+        <figure class="voice" data-reveal style="--i:3">
+          <blockquote><p>“As a peer educator, working with Bevis Impact has been incredibly rewarding. We’re making a real difference in our communities.”</p></blockquote>
+          <figcaption>Maria T., 25, Southern Province</figcaption>
+        </figure>
+        <figure class="voice" data-reveal style="--i:4">
+          <blockquote><p>“Bevis Impact Foundation helped me get tested for the first time. Their team was so supportive and made me feel comfortable throughout the process.”</p></blockquote>
+          <figcaption>Sarah M., 22, Lusaka</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 8. The idea again, inverted -->
+    <section class="join" id="get-involved" aria-labelledby="join-title">
+      <span class="alias" id="involved" aria-hidden="true"></span>
+      <h2 class="join__title" id="join-title">
+        <span class="join__line" data-reveal>Zero HIV</span>
+        <span class="join__line" data-reveal style="--i:1">needs you</span>
+      </h2>
+      <div class="join__foot">
+        <p data-reveal style="--i:2">Volunteers, donors, health partners, educators and youth advocates: there is a place for you in this work.</p>
+        <a class="button button--accent join__action" href="#ways" data-reveal style="--i:3">Choose how to help</a>
+      </div>
+    </section>
+
+    <!-- 9. Ways in, as display rows -->
+    <section class="ways" id="ways" aria-labelledby="ways-title">
+      <h2 class="ways__title" id="ways-title" data-reveal>Ways to help</h2>
+      <ul class="ways__rows" role="list">
+        <li>
+          <a class="way" href="mailto:hello@bevisimpactfoundation.org?subject=Partnering%20on%20youth%20HIV%20testing">
+            <span class="way__name">Partner</span>
+            <span class="way__text">Run youth HIV testing campaigns with us</span>
+            <img class="way__photo" src="assets/img/marketplace-in-mansa-zambia-1.jpg" width="1600" height="900" loading="lazy" decoding="async"
+                 alt="Market stalls with tomatoes and vegetables under thatched shade in Mansa, Luapula Province">
+          </a>
+        </li>
+        <li>
+          <a class="way" href="mailto:hello@bevisimpactfoundation.org?subject=Volunteering%20as%20a%20youth%20advocate">
+            <span class="way__name">Volunteer</span>
+            <span class="way__text">Become a youth advocate or peer educator</span>
+          </a>
+        </li>
+        <li>
+          <a class="way" href="mailto:hello@bevisimpactfoundation.org?subject=Supporting%20outreach">
+            <span class="way__name">Donate</span>
+            <span class="way__text">Fund outreach, or sponsor a testing day</span>
+          </a>
+        </li>
+        <li>
+          <a class="way" href="mailto:hello@bevisimpactfoundation.org?subject=Research%20collaboration">
+            <span class="way__name">Research</span>
+            <span class="way__text">Work with us on research, clinics and education</span>
+          </a>
+        </li>
+        <li>
+          <a class="way way--hello" href="mailto:hello@bevisimpactfoundation.org?subject=Hello">
+            <span class="way__name">Say hello</span>
+            <span class="way__round" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer: contact as the headline, the name returns -->
+  <footer class="foot" id="contact">
+    <div class="foot__top">
+      <div class="foot__notes">
+        <p><strong>Bevis Impact Foundation</strong></p>
+        <p>Youth HIV testing, sexual health education and better HIV services in Zambia.</p>
+      </div>
+      <form class="signup" data-signup novalidate>
+        <label class="signup__label" for="signup-email">Get updates on testing campaigns and youth health work</label>
+        <div class="signup__row">
+          <input class="signup__input" id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <button class="button button--accent" type="submit">Subscribe</button>
+        </div>
+        <p class="form__status" data-status role="status" aria-live="polite"></p>
+      </form>
+      <a class="link foot__back" href="#top">Back to top</a>
+    </div>
+
+    <p class="foot__mail-wrap"><a class="foot__mail" href="mailto:hello@bevisimpactfoundation.org">hello@<br class="only-wide"><wbr>bevisimpact<wbr>foundation.org</a></p>
+
+    <div class="foot__meta">
+      <nav class="foot__links" aria-label="Footer">
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#get-tested">Get tested</a>
+        <a class="link" href="#myth-or-fact">Myth or fact</a>
+        <a class="link" href="#get-involved">Get involved</a>
+      </nav>
+      <p>Built in honour of Bevis Phiri</p>
+      <p>Zambia · © 2026</p>
+    </div>
+
+    <p class="credits">Pictures: <a href="https://commons.wikimedia.org/wiki/File:University_students_on_the_move.jpg">“University students on the move”</a> by Duke Makangila, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Lusaka_Aero_View_01.png">“Lusaka Aero View 01”</a> and <a href="https://commons.wikimedia.org/wiki/File:Lusaka_Aero_View_17.png">“Lusaka Aero View 17”</a> by Icem4k, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:HIV_Rapid_Test_on_table.jpg">“HIV Rapid Test on table”</a> by varnent via LGBT Free Media Collective, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:HIV_Test_kit.jpg">“HIV Test kit”</a> by Mailane vanesa, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>; <a href="https://commons.wikimedia.org/wiki/File:Zambia_-Farm_produce_going_to_the_market.jpg">“Zambia - Farm produce going to the market”</a> by Thatlowdownwoman, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:HIV_Rapid_Test_Kit_--_Orasure.jpg">“HIV Rapid Test Kit -- Orasure”</a> by Wheeler Cowperthwaite, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Marketplace_in_mansa_zambia_1.jpg">“Marketplace in Mansa, Zambia”</a> by Isaacgerg, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. All via Wikimedia Commons, shown in black and white.</p>
+
+    <p class="foot__name" aria-hidden="true"><span data-wordmark-end>Bevis</span></p>
+  </footer>
+</body>
+</html>
